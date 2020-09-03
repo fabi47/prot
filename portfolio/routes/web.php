@@ -31,3 +31,5 @@ Route::get('/menu', 'MenuController@index');
 Route::get('/date', 'DateController@index');
 
 Route::get('/check', 'CheckController@index');
+
+Route::get('/owner/index', 'OwnerController@index');
