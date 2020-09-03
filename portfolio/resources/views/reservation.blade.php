@@ -15,22 +15,23 @@
             <label for="menu" class="close">×</label>
             <nav>
                 <ul>
-                    <form action="sample.php" method="post">
+                    <form action="/sample" method="post">
+                    @csrf
                         <p>
                             名前<br>
-                            <input type="text" name="name" size="20">
+                            <input type="text" name="owner[name]" size="20">
                         </p>
                         <p>
                             携帯電話番号<br>
-                            <input type="text" name="name" size="20">
+                            <input type="text" name="owner[tel]" size="20">
                         </p>
                         <p>
                             車名<br>
-                            <input type="text" name="name" size="20">
+                            <input type="text" name="owner[car_name]" size="20">
                         </p>
                         <p>
                             車番<br>
-                            <input type="text" name="name" size="20">
+                            <input type="text" name="owner[car_number]" size="20">
                         </p>
                         <p>
                             <input type="submit" value="next">
