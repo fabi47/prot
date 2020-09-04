@@ -15,7 +15,7 @@
             <label for="menu" class="close">×</label>
             <nav>
                 <ul>
-                    <form action="/sample" method="post">
+                    <form action="/date" method="post">
                     @csrf
                         <p>
                             名前<br>
