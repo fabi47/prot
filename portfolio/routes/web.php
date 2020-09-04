@@ -12,24 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//Laravel welcome page
 Route::get('/', function () {
     return view('welcome');
 });
 
+//login pege
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/menu', 'MenuController@index');
 
-Route::post('/date', function () {
-    return view('date');
-});
+Route::post('/date', 'dateController@index');
 
-Route::post('/check', function () {
-    return view('check');
-});
-//Route::get('/check', 'CheckController@index');
+Route::post('/check', 'CheckController@index');
 
 //シーディング
 Route::get('/owner/index', 'OwnerController@index');
