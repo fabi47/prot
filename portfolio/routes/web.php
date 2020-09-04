@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/menu', 'MenuController@index');
 
-Route::post('/date', 'dateController@index');
+Route::post('/date', 'DateController@index');
 
 Route::post('/check', 'CheckController@index');
 
